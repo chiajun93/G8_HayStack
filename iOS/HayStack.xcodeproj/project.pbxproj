@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C797E8F1BB19FA300AEF9C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C797E8E1BB19FA300AEF9C3 /* AppDelegate.swift */; };
+		3C797E941BB19FA400AEF9C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C797E921BB19FA400AEF9C3 /* Main.storyboard */; };
+		3C797E961BB19FA400AEF9C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C797E951BB19FA400AEF9C3 /* Assets.xcassets */; };
+		3C797E991BB19FA400AEF9C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C797E971BB19FA400AEF9C3 /* LaunchScreen.storyboard */; };
+		3CB2C9D31BF021F2004E97E7 /* HSHaystackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB2C9D21BF021F2004E97E7 /* HSHaystackView.swift */; };
+		3CB2C9D61BF023CE004E97E7 /* HSHaystackCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB2C9D51BF023CE004E97E7 /* HSHaystackCardView.swift */; };
+		3CCF8FCC1BD09072003C1972 /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCF8FCB1BD09072003C1972 /* CreatePostViewController.swift */; };
+		3CCF8FCF1BD090B2003C1972 /* HSAPILoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCF8FCE1BD090B2003C1972 /* HSAPILoader.swift */; };
+		3CF4D5711BF051B7005FF47B /* HSHaystackCardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF4D5701BF051B7005FF47B /* HSHaystackCardContentView.swift */; };
+		982CF49D1C083F8F004037B2 /* HSProfileBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982CF49C1C083F8F004037B2 /* HSProfileBubbleView.swift */; };
+		982CF49F1C084ABC004037B2 /* HSBubbleVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982CF49E1C084ABC004037B2 /* HSBubbleVIew.swift */; };
+		98566DB01BE9344500F1C89D /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98566DAF1BE9344500F1C89D /* CreateAccountViewController.swift */; };
+		988193DF1BD13B9E002FA45B /* Pods_HayStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D5C15A881126E34F90774E /* Pods_HayStack.framework */; };
+		988193E01BD13B9E002FA45B /* Pods_HayStack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52D5C15A881126E34F90774E /* Pods_HayStack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9888B3BF1BCF2702003480BF /* HSPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9888B3BE1BCF2702003480BF /* HSPost.swift */; };
+		9888B3C11BCF29DE003480BF /* HSVote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9888B3C01BCF29DE003480BF /* HSVote.swift */; };
+		9888B3C31BCF2C98003480BF /* HSUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9888B3C21BCF2C98003480BF /* HSUser.swift */; };
+		98C1D64D1BCB5AFC0028773F /* LocationAcquisitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C1D64C1BCB5AFC0028773F /* LocationAcquisitionViewController.swift */; };
+		98C1D6501BCB5B0B0028773F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C1D64E1BCB5B0B0028773F /* LoginViewController.swift */; };
+		98C1D6511BCB5B0B0028773F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C1D64F1BCB5B0B0028773F /* ViewController.swift */; };
+		98CB4FFE1BEEAE5000DEFF64 /* HSBorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB4FFD1BEEAE5000DEFF64 /* HSBorderedButton.swift */; };
+		98E859211BF052CA004794E0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E859201BF052CA004794E0 /* ProfileViewController.swift */; };
+		9F650F581BEABF92009C256D /* NavigationTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F650F571BEABF92009C256D /* NavigationTabController.swift */; };
+		9FC7CB3A1BCF3FF100E0BBC6 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC7CB391BCF3FF100E0BBC6 /* HomePageViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		988193E11BD13B9E002FA45B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				988193E01BD13B9E002FA45B /* Pods_HayStack.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		16439F026EE071B36AF73319 /* Pods-HayStack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HayStack.release.xcconfig"; path = "Pods/Target Support Files/Pods-HayStack/Pods-HayStack.release.xcconfig"; sourceTree = "<group>"; };
+		3C797E8B1BB19FA300AEF9C3 /* HayStack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HayStack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C797E8E1BB19FA300AEF9C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3C797E931BB19FA400AEF9C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C797E951BB19FA400AEF9C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C797E981BB19FA400AEF9C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3C797E9A1BB19FA400AEF9C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CB2C9D21BF021F2004E97E7 /* HSHaystackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSHaystackView.swift; sourceTree = "<group>"; };
+		3CB2C9D51BF023CE004E97E7 /* HSHaystackCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSHaystackCardView.swift; sourceTree = "<group>"; };
+		3CCF8FCB1BD09072003C1972 /* CreatePostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
+		3CCF8FCE1BD090B2003C1972 /* HSAPILoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSAPILoader.swift; sourceTree = "<group>"; };
+		3CF4D5701BF051B7005FF47B /* HSHaystackCardContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSHaystackCardContentView.swift; sourceTree = "<group>"; };
+		52D5C15A881126E34F90774E /* Pods_HayStack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HayStack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		982CF49C1C083F8F004037B2 /* HSProfileBubbleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSProfileBubbleView.swift; sourceTree = "<group>"; };
+		982CF49E1C084ABC004037B2 /* HSBubbleVIew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSBubbleVIew.swift; sourceTree = "<group>"; };
+		98566DAF1BE9344500F1C89D /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		9888B3BE1BCF2702003480BF /* HSPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSPost.swift; sourceTree = "<group>"; };
+		9888B3C01BCF29DE003480BF /* HSVote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSVote.swift; sourceTree = "<group>"; };
+		9888B3C21BCF2C98003480BF /* HSUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSUser.swift; sourceTree = "<group>"; };
+		98C1D64C1BCB5AFC0028773F /* LocationAcquisitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationAcquisitionViewController.swift; sourceTree = "<group>"; };
+		98C1D64E1BCB5B0B0028773F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		98C1D64F1BCB5B0B0028773F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		98CB4FFD1BEEAE5000DEFF64 /* HSBorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSBorderedButton.swift; sourceTree = "<group>"; };
+		98E859201BF052CA004794E0 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = HayStack/ProfileViewController.swift; sourceTree = SOURCE_ROOT; };
+		9F650F571BEABF92009C256D /* NavigationTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationTabController.swift; sourceTree = "<group>"; };
+		9FC7CB391BCF3FF100E0BBC6 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		CADDF861B3DCEDF36841074A /* Pods-HayStack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HayStack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HayStack/Pods-HayStack.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C797E881BB19FA300AEF9C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				988193DF1BD13B9E002FA45B /* Pods_HayStack.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20CA7274B143AFFA43F256B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52D5C15A881126E34F90774E /* Pods_HayStack.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		24814738704A2891A333F651 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CADDF861B3DCEDF36841074A /* Pods-HayStack.debug.xcconfig */,
+				16439F026EE071B36AF73319 /* Pods-HayStack.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3C797E821BB19FA300AEF9C3 = {
+			isa = PBXGroup;
+			children = (
+				3C797E8D1BB19FA300AEF9C3 /* HayStack */,
+				3C797E8C1BB19FA300AEF9C3 /* Products */,
+				24814738704A2891A333F651 /* Pods */,
+				20CA7274B143AFFA43F256B5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3C797E8C1BB19FA300AEF9C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C797E8B1BB19FA300AEF9C3 /* HayStack.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C797E8D1BB19FA300AEF9C3 /* HayStack */ = {
+			isa = PBXGroup;
+			children = (
+				98CB4FFF1BEEAE6B00DEFF64 /* View */,
+				3CCF8FCD1BD0908E003C1972 /* utility */,
+				9888B3BD1BCF269C003480BF /* model */,
+				98C1D64B1BCB5AFC0028773F /* controller */,
+				3C797E8E1BB19FA300AEF9C3 /* AppDelegate.swift */,
+				3C797E921BB19FA400AEF9C3 /* Main.storyboard */,
+				3C797E951BB19FA400AEF9C3 /* Assets.xcassets */,
+				3C797E971BB19FA400AEF9C3 /* LaunchScreen.storyboard */,
+				3C797E9A1BB19FA400AEF9C3 /* Info.plist */,
+			);
+			path = HayStack;
+			sourceTree = "<group>";
+		};
+		3CCF8FCD1BD0908E003C1972 /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				3CCF8FCE1BD090B2003C1972 /* HSAPILoader.swift */,
+			);
+			path = utility;
+			sourceTree = "<group>";
+		};
+		9888B3BD1BCF269C003480BF /* model */ = {
+			isa = PBXGroup;
+			children = (
+				9888B3BE1BCF2702003480BF /* HSPost.swift */,
+				9888B3C01BCF29DE003480BF /* HSVote.swift */,
+				9888B3C21BCF2C98003480BF /* HSUser.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		98C1D64B1BCB5AFC0028773F /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				98E859201BF052CA004794E0 /* ProfileViewController.swift */,
+				98566DAF1BE9344500F1C89D /* CreateAccountViewController.swift */,
+				98C1D64C1BCB5AFC0028773F /* LocationAcquisitionViewController.swift */,
+				98C1D64E1BCB5B0B0028773F /* LoginViewController.swift */,
+				98C1D64F1BCB5B0B0028773F /* ViewController.swift */,
+				9FC7CB391BCF3FF100E0BBC6 /* HomePageViewController.swift */,
+				3CCF8FCB1BD09072003C1972 /* CreatePostViewController.swift */,
+				9F650F571BEABF92009C256D /* NavigationTabController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		98CB4FFF1BEEAE6B00DEFF64 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				98CB4FFD1BEEAE5000DEFF64 /* HSBorderedButton.swift */,
+				3CB2C9D21BF021F2004E97E7 /* HSHaystackView.swift */,
+				3CB2C9D51BF023CE004E97E7 /* HSHaystackCardView.swift */,
+				3CF4D5701BF051B7005FF47B /* HSHaystackCardContentView.swift */,
+				982CF49C1C083F8F004037B2 /* HSProfileBubbleView.swift */,
+				982CF49E1C084ABC004037B2 /* HSBubbleVIew.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C797E8A1BB19FA300AEF9C3 /* HayStack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C797E9D1BB19FA400AEF9C3 /* Build configuration list for PBXNativeTarget "HayStack" */;
+			buildPhases = (
+				6EFE1A26A9B2C2C34C71791D /* Check Pods Manifest.lock */,
+				3C797E871BB19FA300AEF9C3 /* Sources */,
+				3C797E881BB19FA300AEF9C3 /* Frameworks */,
+				3C797E891BB19FA300AEF9C3 /* Resources */,
+				301BC439BD2B9A731F4EEB21 /* Embed Pods Frameworks */,
+				500EAFBCEE409974360502D0 /* Copy Pods Resources */,
+				988193E11BD13B9E002FA45B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HayStack;
+			productName = HayStack;
+			productReference = 3C797E8B1BB19FA300AEF9C3 /* HayStack.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C797E831BB19FA300AEF9C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = 309;
+				TargetAttributes = {
+					3C797E8A1BB19FA300AEF9C3 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 7XUP88MUC4;
+					};
+				};
+			};
+			buildConfigurationList = 3C797E861BB19FA300AEF9C3 /* Build configuration list for PBXProject "HayStack" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C797E821BB19FA300AEF9C3;
+			productRefGroup = 3C797E8C1BB19FA300AEF9C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C797E8A1BB19FA300AEF9C3 /* HayStack */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C797E891BB19FA300AEF9C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C797E991BB19FA400AEF9C3 /* LaunchScreen.storyboard in Resources */,
+				3C797E961BB19FA400AEF9C3 /* Assets.xcassets in Resources */,
+				3C797E941BB19FA400AEF9C3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		301BC439BD2B9A731F4EEB21 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HayStack/Pods-HayStack-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		500EAFBCEE409974360502D0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HayStack/Pods-HayStack-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EFE1A26A9B2C2C34C71791D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C797E871BB19FA300AEF9C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98CB4FFE1BEEAE5000DEFF64 /* HSBorderedButton.swift in Sources */,
+				9888B3C11BCF29DE003480BF /* HSVote.swift in Sources */,
+				9888B3BF1BCF2702003480BF /* HSPost.swift in Sources */,
+				3CCF8FCF1BD090B2003C1972 /* HSAPILoader.swift in Sources */,
+				98566DB01BE9344500F1C89D /* CreateAccountViewController.swift in Sources */,
+				98C1D6501BCB5B0B0028773F /* LoginViewController.swift in Sources */,
+				98E859211BF052CA004794E0 /* ProfileViewController.swift in Sources */,
+				98C1D64D1BCB5AFC0028773F /* LocationAcquisitionViewController.swift in Sources */,
+				9FC7CB3A1BCF3FF100E0BBC6 /* HomePageViewController.swift in Sources */,
+				98C1D6511BCB5B0B0028773F /* ViewController.swift in Sources */,
+				9888B3C31BCF2C98003480BF /* HSUser.swift in Sources */,
+				3CCF8FCC1BD09072003C1972 /* CreatePostViewController.swift in Sources */,
+				3CB2C9D61BF023CE004E97E7 /* HSHaystackCardView.swift in Sources */,
+				3C797E8F1BB19FA300AEF9C3 /* AppDelegate.swift in Sources */,
+				3CF4D5711BF051B7005FF47B /* HSHaystackCardContentView.swift in Sources */,
+				9F650F581BEABF92009C256D /* NavigationTabController.swift in Sources */,
+				3CB2C9D31BF021F2004E97E7 /* HSHaystackView.swift in Sources */,
+				982CF49F1C084ABC004037B2 /* HSBubbleVIew.swift in Sources */,
+				982CF49D1C083F8F004037B2 /* HSProfileBubbleView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3C797E921BB19FA400AEF9C3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C797E931BB19FA400AEF9C3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3C797E971BB19FA400AEF9C3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C797E981BB19FA400AEF9C3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C797E9B1BB19FA400AEF9C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C797E9C1BB19FA400AEF9C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C797E9E1BB19FA400AEF9C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CADDF861B3DCEDF36841074A /* Pods-HayStack.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = HayStack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_DYLIB_INSTALL_NAME = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.iastate.HayStack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		3C797E9F1BB19FA400AEF9C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16439F026EE071B36AF73319 /* Pods-HayStack.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = HayStack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_DYLIB_INSTALL_NAME = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.iastate.HayStack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C797E861BB19FA300AEF9C3 /* Build configuration list for PBXProject "HayStack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C797E9B1BB19FA400AEF9C3 /* Debug */,
+				3C797E9C1BB19FA400AEF9C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C797E9D1BB19FA400AEF9C3 /* Build configuration list for PBXNativeTarget "HayStack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C797E9E1BB19FA400AEF9C3 /* Debug */,
+				3C797E9F1BB19FA400AEF9C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C797E831BB19FA300AEF9C3 /* Project object */;
+}

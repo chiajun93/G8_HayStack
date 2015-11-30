@@ -1,0 +1,12 @@
+platform :ios, "8.0"
+use_frameworks!
+
+target 'HayStack' do
+
+pod 'Alamofire'
+pod 'SnapKit'
+pod 'pop'
+pod 'IQKeyboardManager'
+
+end
+

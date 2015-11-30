@@ -1,0 +1,19 @@
+PODS:
+  - Alamofire (3.1.2)
+  - IQKeyboardManager (3.3.4)
+  - pop (1.0.8)
+  - SnapKit (0.17.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - IQKeyboardManager
+  - pop
+  - SnapKit
+
+SPEC CHECKSUMS:
+  Alamofire: 7c16ca65f3c7e681fd925fd7f2dec7747ff96855
+  IQKeyboardManager: ac803e61e5b50efae6b3aeedd95a02c7c7d3b2b3
+  pop: bb773ae2c791ca2629de13b347e7a8b450fa6a57
+  SnapKit: 49fd7b1b3ff58ab4064004036b8afcfddbd3a4bd
+
+COCOAPODS: 0.38.2
